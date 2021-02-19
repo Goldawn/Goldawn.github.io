@@ -244,7 +244,7 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 #core_page {
   margin-top: 30px;
   display: flex;
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
   justify-content: space-between;
   min-height: 625px;
 }
@@ -260,6 +260,7 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  margin-right: 25px;
 }
 
 #box-hebergements_container > * {
@@ -579,39 +580,34 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   }
 }
 
-@media screen and ( max-width: 1305px) {
+@media screen and ( max-width: 1300px) {
+  #box-hebergements_container {
+    width: 67vw;
+  }
+  .box-hebergements {
+    width: 63vw;
+  }
+
+  #box-hebergements_container > *{
+    width: 63vw;
+  }
+
+  .box-hebergements_cards {
+    width: 20vw;
+  }
 
   aside {
-    justify-content: space-between;
-    width: 100%;
-    border-radius: 0;
-    padding: 0 2%;
-  }
-
-  #box-hebergements_container {
-    background-color: white;
-    max-width: 100%;
-    margin-top: 35px;
-  }
-
-  #box-hebergements_all-content {
-    margin-top: 25px;
+    width: 33vw;
   }
 
   .box-populaires {
-    width: 100%;
+    width: 29vw;
+  }
+  .box-populaires_cards {
+    width: 29vw;
   }
 
-  #box-hebergements_container > * {
-    width: 100%;
-    padding: 0 2%;
-  }
-
-  #box-populaires_cards-container {
-    height: 180px;
-  }
-
-  .box-hebergements_cards, .activity_cards-container {
+  .activity_cards-container {
     width: 30vw;
   }
 
@@ -628,20 +624,44 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   }
 }
 
-@media screen and ( max-width: 1078px) {
-  
-  #box-populaires_cards-container {
-    margin-top: 20px;
-    height: 380px;
-  }
+@media screen and ( max-width: 1024px) {
 
-  .box-populaires_cards  {
-    width: 45vw;
-  }
-
+#box-populaires_cards-container {
+  margin-top: 20px;
+  height: 380px;
 }
 
-@media screen and ( max-width: 1024px) {
+#core_page {
+  flex-wrap: wrap-reverse;
+}
+
+aside {
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0;
+  padding: 0 2%;
+}
+
+#box-hebergements_container {
+  background-color: white;
+  width: 100%;
+  margin-top: 35px;
+  margin-right: 0;
+}
+
+#box-hebergements_all-content {
+  margin-top: 25px;
+}
+
+.box-populaires {
+  width: 100%;
+}
+
+#box-hebergements_container > * {
+  width: 100%;
+  padding: 0 2%;
+}
+
 
 * {
   font-size: 0.9rem;
