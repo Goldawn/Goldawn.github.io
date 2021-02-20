@@ -244,7 +244,7 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 #core_page {
   margin-top: 30px;
   display: flex;
-  /* flex-wrap: wrap-reverse; */
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   min-height: 625px;
 }
@@ -254,17 +254,15 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 }
 
 #box-hebergements_container {
-  width: 100%;
-  max-width: 875px;
+  width: 65.5%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  margin-right: 25px;
 }
 
-#box-hebergements_container > * {
-  width: 800px;
+.box-hebergements {
+  width: 91.5%;
 }
 
 .box-hebergements {
@@ -285,13 +283,13 @@ Y8b  d8 `8b  d8' 88 `88. 88.          88      88   88 88. ~8~ 88.
 }
 
 .margin_bot {
+  width: 31.5%;
   margin-bottom: 25px;
 }
 
 .box-hebergements_cards {
   display: flex;
   flex-direction: column;
-  width: 250px;
   height: 200px;
   background-color: #fff;
   border-radius: 25px;
@@ -356,7 +354,7 @@ YP   YP `8888Y' Y888888P Y8888D' Y88888P
 */
 
 aside {
-  width: 420px;
+  width: 31.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +362,7 @@ aside {
 }
 
 .box-populaires {
-  width: 345px;
+  width: 82%;
 }
 
 .box-populaires_title-box {
@@ -387,7 +385,6 @@ aside {
 
 .box-populaires_cards {
   max-width: 100%;
-  width: 345px;
   height: 145px;
   background-color:#fff;
   border-radius: 25px;
@@ -527,7 +524,6 @@ YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD
 */
 
 footer {
-  /* width: 100%; */
   margin-top: 60px;
   height: 215px;
   display: flex;
@@ -580,32 +576,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   }
 }
 
-@media screen and ( max-width: 1300px) {
-  #box-hebergements_container {
-    width: 67vw;
-  }
-  .box-hebergements {
-    width: 63vw;
-  }
-
-  #box-hebergements_container > *{
-    width: 63vw;
-  }
-
-  .box-hebergements_cards {
-    width: 20vw;
-  }
-
-  aside {
-    width: 33vw;
-  }
-
-  .box-populaires {
-    width: 29vw;
-  }
-  .box-populaires_cards {
-    width: 29vw;
-  }
+@media screen and ( max-width: 1305px) {  
 
   .activity_cards-container {
     width: 30vw;
@@ -618,50 +589,9 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   .lower_height {
     margin-right: 15px;
   }
-
-  .box-hebergements {
-    min-height: 250px;
-  }
 }
 
 @media screen and ( max-width: 1024px) {
-
-#box-populaires_cards-container {
-  margin-top: 20px;
-  height: 380px;
-}
-
-#core_page {
-  flex-wrap: wrap-reverse;
-}
-
-aside {
-  justify-content: space-between;
-  width: 100%;
-  border-radius: 0;
-  padding: 0 2%;
-}
-
-#box-hebergements_container {
-  background-color: white;
-  width: 100%;
-  margin-top: 35px;
-  margin-right: 0;
-}
-
-#box-hebergements_all-content {
-  margin-top: 25px;
-}
-
-.box-populaires {
-  width: 100%;
-}
-
-#box-hebergements_container > * {
-  width: 100%;
-  padding: 0 2%;
-}
-
 
 * {
   font-size: 0.9rem;
@@ -680,6 +610,45 @@ nav, #search_section, #box-hebergements_container, .box-populaires, #activity_se
 
 aside, #box-hebergements_container>* {
   padding: 0;
+}
+
+aside {
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0;
+  padding: 0 2%;
+}
+
+.box-hebergements {
+  min-height: 150px;
+}
+
+#box-hebergements_container {
+  background-color: white;
+  width: 100%;
+  margin-top: 35px;
+}
+
+#box-hebergements_all-content {
+  margin-top: 25px;
+}
+
+.box-populaires {
+  width: 100%;
+}
+
+#box-populaires_cards-container {
+  margin-top: 20px;
+  height: 380px;
+}
+
+.margin_bot {
+  width: auto;
+}
+
+#box-hebergements_container > * {
+  width: 100%;
+  padding: 0 2%;
 }
 
 .box-populaires_cards, .box-hebergements_cards  {
