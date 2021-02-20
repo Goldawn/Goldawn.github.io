@@ -450,11 +450,14 @@ YP   YP  `Y88P'    YP    Y888888P    YP    Y888888P    YP       YP         `8888
 }
 
 .activity_cards-container {
-  width: 300px;
+  width: 22.5%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  height: 35vw;
+  max-height: 450px;
 }
 
 .activity_cards {
@@ -578,19 +581,33 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   }
 }
 
+@media screen and ( max-width: 1335px) {
+
+  .full_height {
+    height: 34vw;
+  }
+  
+  .low_height {
+    height: 12.4vw;
+  }
+  
+  .high_height {
+    height: 18vw;
+  }
+  
+  .higher_height {
+    height: 15.5vw;
+  }
+  
+  .lower_height {
+    height: 15vw;
+  }
+
+}
+
 @media screen and ( max-width: 1305px) {  
 
-  .activity_cards-container {
-    width: 30vw;
-  }
-
-  #activity_container .activity_cards-container:last-child {
-    width: 100vw;
-    flex-direction: row;
-  }
-  .lower_height {
-    margin-right: 15px;
-  }
+  
 }
 
 @media screen and ( max-width: 1150px) {
@@ -671,8 +688,26 @@ aside {
   width: 40vw;
 }
 
+#activity_container .activity_cards-container:last-child {
+  width: 100vw;
+  flex-direction: row;
+}
+.lower_height {
+  margin-right: 15px;
+}
+
+#activity_container .activity_cards-container:last-child {
+  width: 100vw;
+  flex-direction: row;
+}
+.lower_height {
+  margin-right: 15px;
+}
+
 .activity_cards-container {
   width: 28vw;
+  height: auto;
+  max-height: initial;
 }
 
 .full_height {
